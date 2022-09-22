@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none ;
+    list-style: none;
+}
+
+body{
+    background-color:#111111;
+    font-family: "Karla", sans-serif;
+}
+
+.fondo_lineas{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: -1;
+}
+
+.linea1{
+    position: absolute;
+    background-color: #8A8A8A;
+    opacity: 10%;
+    left: 10%;
+    width: 1px;
+    height: 100%;
+}
+
+.linea2{
+    position: absolute;
+    background-color: #8A8A8A;
+    opacity: 10%;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+}
+
+.linea3{
+    position: absolute;
+    background-color: #8A8A8A;
+    opacity: 10%;
+    left: 90%;
+    width: 1px;
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.color_letra{
+    color: white;
+}
+
+h1{
+    font-size: 35px;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 130%;
+}
+
+h2{
+    font-family: "Karla", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 150%;
+
+}
+
+h3{
+    font-family: "PT Mono", sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+p{
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 150%;
+
+}
+
+button{
+    border: none;
+    background-color: #1B44FF;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "PT Mono", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* Header */
+
+.header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+  
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: auto; 
+}
+
+.nav-logo{
+    display: flex;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  
+  .nav-logo a{
+    width: max-content;
+  }
+  
+  .img-logo{
+    padding: 0px;
+    height: 20px;
+  }
+  
+  .nav-menu{
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #0b0b0b;
+    position: fixed;
+    top:80px;
+    left:0;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    left: 0%;
+    transition: left 0.3s;
+  }
+  
+  .nav-menu-item{
+
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .nav-toogle{
+    display: block;
+  }
+
+  .nav-toogle i{
+    font-size: 30px;
+  }
+
+  .nav-menu_visible{
+    left:100%;
+  }
+
+  .nav-toogle:focus:not(:focus-visible){
+    outline: none;
+  }
+
+.nav-toogle{
+    color:#DADADA;
+    background:none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    margin-top: 150px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hero-container-texto h3{
+    margin-bottom: 20px;
+}
+.hero-container-texto button{
+    margin: 40px 0;
+    width: 100%;
+}
+  
+.img-hero{
+    width: 100%;
+    height: auto;
+}
+
+/* Descripcion */
+
+.descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+.descripcion-container-texto h1{
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+.resaltado{
+    background-color: #1B44FF;
+    padding: 1px 10px;
+    font-weight: 700;
+    letter-spacing: 0px;
+
+  }
+
+
+/* Titulo de Secciones */
+.line{
+    background-color: #1B44FF;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 20px;
+}
+
+.seccion-titulo h2{
+    margin-bottom: 20px;
+}
+
+.seccion-titulo h3{
+    margin-bottom: 20px;
+}
