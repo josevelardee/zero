@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:#1A1A1A;
+    background-color:#111111;
     color: white;
     font-family: 'Inter', sans-serif;
     transition: all 300ms ease-in;
@@ -23,8 +23,8 @@ body{
     height: 200vh;
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
-    animation: bg-animation .2s infinite;
-    opacity: 9.;
+    animation: bg-animation .4s infinite;
+    opacity: .9;
     visibility: visible;
 }
 
