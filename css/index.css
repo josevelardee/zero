@@ -42,8 +42,6 @@ body{
   100% { transform: translate(5%,0) }
 }
 
-
-
 .container{
     max-width: 1200px;
     margin: auto;
@@ -56,8 +54,9 @@ body{
 h1{
     color: #EEEEEE;
     font-size: 33px;
-    font-weight: 500;
-    line-height: 130%;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: 150%;
 }
 
 h2{
@@ -232,7 +231,11 @@ button{
   display: flex;
   justify-content: space-between;
 }
-  
+
+.cursor_hero{
+  background-color: #9AFD37;
+}
+
 
 
 /* Descripcion */

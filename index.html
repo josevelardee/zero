@@ -11,13 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
-    <div class="fondo_lineas">
-        <div class="linea1"></div>
-        <div class="linea2"></div>
-        <div class="linea3"></div>
-    </div>
+    <!-- <div class="fondo_lineas"></div> -->
     <header class="header">
         <nav class="nav">
             <div class="nav-logo">
@@ -49,13 +46,14 @@
         <section class="hero" id="hero">
             <div class="hero-container container ">
                 <div class="hero-container-texto">
-                    <h1 class="">Transformamos ideas en proyectos de</h1>
-                    <h1 class="gradiente">inteligencia artifical |</h1>
+                    <h1>Transformamos</h1>
+                    <h1><span style="font-style: italic">ideas</span> en proyectos de</h1>
+                    <h1 class="gradiente" id="Hero-titulo"></h1>
                     <button class="gradiente display_m" type="button" onclick="alert('Hello world!')" class="">Trabajemos Juntos</button>
                 </div>
                 <div class="hero-container-bottom ">
-                    <h4 class="">10:30 am Lima Peru</h4>
-                    <h4 class="">(Scroll down)</h4>
+                    <h4><span id="current_date"></span> Lima Peru</h4>
+                    <h4>(Scroll down)</h4>
                 </div>
             </div>
         </section>

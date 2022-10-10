@@ -1,3 +1,32 @@
+//Texto Hero
+
+var app = document.getElementById('Hero-titulo');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+  cursorClassName: "cursor-hero",
+});
+
+typewriter
+  .pauseFor(1000)
+  .typeString('internet de las cosas')
+  .pauseFor(500)
+  .deleteAll()
+  .typeString('inteligencia artificial')
+  .pauseFor(500)
+  .deleteAll()
+  .typeString('hardware')
+  .pauseFor(500)
+  .deleteAll()
+  .typeString('software')
+  .pauseFor(500)
+  .deleteAll()
+  .typeString('innovación')
+  .pauseFor(500)
+  .deleteAll()
+  .start();
+
 //Header Responsive
 
 const navTogle = document.querySelector(".nav-toogle");
@@ -40,16 +69,20 @@ var heroPos = []
 var proyectoPos = []
 
   
-window.addEventListener('scroll', function(){
+//HORA
 
-    if((heroPos.top) < 0){
-        header.style.top = "-80px";   
-    }
+showTime();
 
-    else{
-        header.style.top = "0px"; 
-        header.style.backgroundColor = "none";   
-    }
+function showTime(){
+var myDate = new Date();
+var hours = myDate.getHours();
+hours = ("0" + hours).slice(-2);
+var minutes = myDate.getMinutes();
+minutes = ("0" + minutes).slice(-2);
+var seconds = myDate.getSeconds();
+seconds = ("0" + seconds).slice(-2);
+var time = hours + ":" + minutes + ":" + seconds;
+document.getElementById("current_date").innerHTML = time;
+}
+setInterval(showTime, 1000);
 
-})   
-  
