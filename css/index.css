@@ -41,7 +41,7 @@ h3{
     color: #EEEEEE;
     font-size: 25px;
     font-weight: 400;
-    line-height: 180%;
+    line-height: 150%;
 }
 
 h4{
@@ -299,19 +299,50 @@ button{
 }
 
 
-/* Titulo de Secciones */
-.line{
-    background-color: #1B44FF;
-    width: 50px;
-    height: 4px;
-    margin-bottom: 20px;
+
+/* Pregunta */
+
+.pregunta-container h3{
+  text-align: right;
 }
 
-.seccion-titulo h2{
-    margin-bottom: 20px;
+/* Footer */
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
 }
 
-.seccion-titulo h3{
-    margin-bottom: 20px;
-    font-size: 14px;
+.footer-texto{
+  margin-bottom: 50px;
+}
+
+.footer-texto h4{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.footer-botones{
+  margin-bottom: 50px;
+}
+
+.footer-botones button{
+  margin-bottom: 20px;
+}
+
+.footer-redes{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.footer-redes a{
+  color: #888888;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
 }
