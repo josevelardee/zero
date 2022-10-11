@@ -14,35 +14,6 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   }
 
-/* .fondo_lineas{
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-    background-repeat: repeat;
-    animation: bg-animation .4s infinite;
-    opacity: .9;
-    visibility: visible;
-} */
-
-@keyframes bg-animation {
-  0% { transform: translate(0,0) }
-  10% { transform: translate(-5%,-5%) }
-  20% { transform: translate(-10%,5%) }
-  30% { transform: translate(5%,-10%) }
-  40% { transform: translate(-5%,15%) }
-  50% { transform: translate(-10%,5%) }
-  60% { transform: translate(15%,0) }
-  70% { transform: translate(0,10%) }
-  80% { transform: translate(-15%,0) }
-  90% { transform: translate(10%,5%) }
-  100% { transform: translate(5%,0) }
-}
-
 .container{
     max-width: 1200px;
     margin: auto;
@@ -54,9 +25,9 @@ body{
 
 h1{
     color: #EEEEEE;
-    font-size: 33px;
+    font-size: 32px;
     font-weight: 600;
-    letter-spacing: -0.1px;
+    letter-spacing: 0px;
     line-height: 150%;
 }
 
@@ -64,30 +35,41 @@ h2{
     font-size: 30px;
     font-weight: 600;
     line-height: 150%;
-
 }
 
 h3{
-    font-size: 14px;
-    opacity: 0.7;
+    color: #EEEEEE;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 180%;
 }
 
 h4{
+  color: #EEEEEE;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h5{
   color: #888888;
   font-weight: 400;
   font-size: 16px;
 }
 
+
+
 p{
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.7;
-    line-height: 150%;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 180%;
 
 }
 
 button{
-  border: 2px solid #888888;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1.5px solid #888888;
   border-radius: 100px;
   background-color: transparent;
   color: #EEEEEE;
@@ -259,17 +241,62 @@ button{
     margin: 50px 0;
   }
 
-.descripcion-container-texto h1{
-    font-size: 30px;
-    line-height: 1.22em;
+.descripcion-container-texto h3{
+  margin-bottom: 50px;
 }
-/* .resaltado{
-    background-color: #1B44FF;
-    padding: 1px 10px;
-    font-weight: 700;
-    letter-spacing: 0px;
 
-  } */
+.descripcion-container-texto button{
+  margin: 50px 0;
+}
+
+.descripcion-container-texto i{
+  margin-left: 20px;
+}
+
+/* Servicios */
+
+.servicios{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.servicios-container h2{
+  margin-bottom: 50px;
+}
+
+.lista-servicios{
+  display: flex;  
+  flex-direction: column;
+}
+
+.card-servicio{
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.card-servicio img{
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+}
+
+.card-servicio h4{
+  margin-bottom: 10px;
+}
+
+.card-servicio p{
+  font-size: 16px;
+}
 
 
 /* Titulo de Secciones */

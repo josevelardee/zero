@@ -10,23 +10,23 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString('internet de las cosas')
+  .typeString('internet de las cosas.')
   .pauseFor(1500)
   .deleteAll()
 
-  .typeString('hardware')
+  .typeString('hardware.')
   .pauseFor(1500)
   .deleteAll()
 
-  .typeString('inteligencia artificial')
+  .typeString('inteligencia artificial.')
   .pauseFor(1500)
   .deleteAll()
 
-  .typeString('software')
+  .typeString('software.')
   .pauseFor(1500)
   .deleteAll()
 
-  .typeString('innovación')
+  .typeString('innovación.')
   .pauseFor(1500)
   .deleteAll()
   .start();
