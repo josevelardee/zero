@@ -5,25 +5,29 @@ var app = document.getElementById('Hero-titulo');
 var typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
-  cursorClassName: "cursor-hero",
+  cursor: ""
 });
 
 typewriter
   .pauseFor(1000)
   .typeString('internet de las cosas')
-  .pauseFor(500)
+  .pauseFor(1500)
   .deleteAll()
-  .typeString('inteligencia artificial')
-  .pauseFor(500)
-  .deleteAll()
+
   .typeString('hardware')
-  .pauseFor(500)
+  .pauseFor(1500)
   .deleteAll()
+
+  .typeString('inteligencia artificial')
+  .pauseFor(1500)
+  .deleteAll()
+
   .typeString('software')
-  .pauseFor(500)
+  .pauseFor(1500)
   .deleteAll()
+
   .typeString('innovación')
-  .pauseFor(500)
+  .pauseFor(1500)
   .deleteAll()
   .start();
 

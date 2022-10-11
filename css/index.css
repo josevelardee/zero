@@ -11,9 +11,10 @@ body{
     color: white;
     font-family: 'Inter', sans-serif;
     transition: all 300ms ease-in;
-}
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  }
 
-.fondo_lineas{
+/* .fondo_lineas{
     position: fixed;
     top: -50%;
     left: -50%;
@@ -26,7 +27,7 @@ body{
     animation: bg-animation .4s infinite;
     opacity: .9;
     visibility: visible;
-}
+} */
 
 @keyframes bg-animation {
   0% { transform: translate(0,0) }
@@ -213,7 +214,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
 }
 
 .hero-container-texto{
@@ -232,10 +233,20 @@ button{
   justify-content: space-between;
 }
 
-.cursor_hero{
-  background-color: #9AFD37;
+.hero-especialidades{
+  display: flex;
+  justify-content: left;
 }
 
+.blink{
+  -webkit-animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity: 0}
+}
 
 
 /* Descripcion */
