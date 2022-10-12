@@ -17,7 +17,7 @@ body{
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 20px 20px;
     overflow: hidden;
     width: 100%;
   }
@@ -81,7 +81,7 @@ button{
 
 .gradiente{
   background-color: #CDF576;
-  background: linear-gradient(45deg, #c3f753, #6ee58e);
+  background: linear-gradient(45deg, #D4F575, #68ED66);
 	/* background: linear-gradient(45deg, #c3f753, #6ee58e, #5072ee, #7c85ec, #5072ee, #6ee58e); */
 	background-size: 100% 100%;
   -webkit-background-clip: text;
@@ -188,6 +188,7 @@ button{
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 250px;
   }
 
 .hero-container{
@@ -203,7 +204,7 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80%;
+  height: 100%;
 }
 .hero-container-texto button{
   border: 2px solid #9AFD37;
@@ -238,7 +239,7 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 50px 0;
+    margin-bottom: 250px;
   }
 
 .descripcion-container-texto h3{
@@ -260,7 +261,8 @@ button{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 50px 0;
+  margin-bottom: 250px;
+
 }
 
 .servicios-container h2{
@@ -273,7 +275,7 @@ button{
 }
 
 .card-servicio{
-  background-color: #1A1A1A;
+  background-color: #1c1c1c;
   display: flex;
   flex-direction: column;
   padding: 30px 25px;
@@ -298,19 +300,46 @@ button{
   font-size: 16px;
 }
 
+/* Proyectos */
 
+.proyecto{
+  margin-bottom: 250px; 
+}
+
+
+/* Clientes */
+
+.equipo{
+  margin-bottom: 250px; 
+}
+
+
+/* Clientes */
+
+.clientes{
+  margin-bottom: 250px; 
+}
 
 /* Pregunta */
 
+.pregunta{
+  margin-bottom: 250px; 
+}
 .pregunta-container h3{
   text-align: right;
 }
 
 /* Footer */
 
+footer{
+
+}
+
 .footer-container{
   display: flex;
   flex-direction: column;
+  justify-content:flex-end;
+
 }
 
 .footer-texto{
@@ -319,7 +348,7 @@ button{
 
 .footer-texto h4{
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .footer-botones{
