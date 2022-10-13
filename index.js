@@ -339,12 +339,12 @@ gsap.from(".pregunta-container", {
 gsap.from(".footer-container", { 
   scrollTrigger: {
     trigger: ".footer-container",
-    start: "top 90%",
+    start: "top 80%",
     end: "bottom 20%",
     //markers: true,
-    scrub: true,
+    scrub: 1,
 
     //toggleActions: "restart pause pause pause"
   },
-  y: -200,
+  y: -100,
 })
