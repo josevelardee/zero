@@ -405,6 +405,29 @@ button{
   margin-bottom: 250px; 
 }
 
+
+.clientes h2{
+  margin-bottom: 50px; 
+  text-align: center;
+}
+
+.lista-clientes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.lista-clientes img{
+  width: 130px;
+  height: 100%;
+  margin: 20px;
+  vertical-align: middle;
+  
+
+
+}
+
 /* Pregunta */
 
 .pregunta{
