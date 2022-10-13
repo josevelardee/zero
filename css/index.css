@@ -197,7 +197,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 180px);
 }
 
 .hero-container-texto{
@@ -267,12 +267,18 @@ button{
 
 .servicios-container h2{
   margin-bottom: 50px;
+
+}
+
+.carrousel{
+
 }
 
 .lista-servicios{
-  display: flex;  
+  display: flex; 
   flex-direction: column;
 }
+
 
 .card-servicio{
   background-color: #1c1c1c;
@@ -282,6 +288,7 @@ button{
   width: 100%;
   margin-bottom: 50px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .card-servicio img{
@@ -421,10 +428,8 @@ button{
 .lista-clientes img{
   width: 130px;
   height: 100%;
-  margin: 20px;
   vertical-align: middle;
-  
-
+  margin: 20px;
 
 }
 
@@ -482,4 +487,15 @@ footer{
 .footer-bottom{
   display: flex;
   justify-content: space-between;
+}
+
+/* TEXTO GRANDE */
+.texto-grande{
+  margin-bottom: 250px;
+}
+.texto-grande h1{
+  opacity: 10%;
+  font-style: italic;
+  font-size: 50px;
+  
 }

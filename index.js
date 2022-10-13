@@ -74,7 +74,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .pauseFor(1000)
+  .pauseFor(1500)
   .typeString('internet de las cosas.')
   .pauseFor(1500)
   .deleteAll()
@@ -204,3 +204,26 @@ function proyectosFunc(Array){
       listaProyectos.appendChild(divProyecto);       
   }
 }
+
+//Animation
+
+let tl = gsap.timeline()
+
+
+tl.from(".nav", { 
+  y: -40,
+  opacity: 0,
+  duration: 1
+})
+
+tl.from(".hero-container-texto", { 
+  x: -100,
+  opacity: 0,
+  duration: 1
+},"<0.4")
+
+tl.from(".hero-container-bottom", { 
+  y: 40,
+  opacity: 0,
+  duration: 1
+},"<0.4")
