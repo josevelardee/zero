@@ -336,12 +336,21 @@ button{
 }
 
 .proyecto-tipo-link_active{
-  background-color: #555555;
-  border-color: #555555 ;
+  color: #555555;
+  background-color: #EEEEEE;
+  border-color: #EEEEEE ;
 }
 .proyecto-tipo-link:hover{
-  background-color: #555555;
-  border-color: #555555 ;
+  color: #555555;
+  background-color: #EEEEEE;
+  border-color: #EEEEEE ;
+}
+
+.proyecto-tipo-link span{
+  color:#888888; 
+  font-size: 12px;
+  margin-left: 10px;
+
 }
 
 

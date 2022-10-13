@@ -31,8 +31,6 @@ function cargarElementos(){
     return dataProyectos.tipo == tipoProyecto;
    });
   proyectosFunc(filtProyectos);
-  hoverProyecto();
-  parallax() 
 }
 
 //Tipo de Proyecto Active Element y Filtro
@@ -62,9 +60,6 @@ for (var i = 0; i < proyectoLinks.length; i++) {
    });
     proyectosFunc(filtProyectos);
 
-    parallax();
-    hoverProyecto();
-   
   });
 };
 
