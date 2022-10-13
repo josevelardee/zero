@@ -239,7 +239,7 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
 
 .descripcion-container-texto h3{
@@ -491,11 +491,19 @@ footer{
 
 /* TEXTO GRANDE */
 .texto-grande{
-  margin-bottom: 250px;
+margin-bottom: 150px;
+overflow: hidden;
+white-space: nowrap;
+
 }
-.texto-grande h1{
-  opacity: 10%;
+.texto-grande-izq{
+  opacity: 0.1;
   font-style: italic;
   font-size: 50px;
-  
+}
+
+.texto-grande-der{
+  opacity: 0.1;
+  font-style: italic;
+  font-size: 50px;
 }

@@ -232,3 +232,40 @@ tl.from(".hero-container-bottom", {
   opacity: 0,
   duration: 1
 },"<0.4")
+
+gsap.from(".descripcion-container-texto", { 
+  scrollTrigger: {
+    trigger: ".descripcion-container-texto",
+    start: "top 80%",
+    end: "bottom 20%",
+    //markers: true,
+    toggleActions: "restart pause pause pause"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1.5
+})
+
+gsap.fromTo(".texto-grande-izq", { 
+  x:-400},{ 
+  scrollTrigger: {
+    trigger: ".texto-grande-izq",
+    start: "top 100%",
+    //markers: true,
+    scrub: 1,
+    toggleActions: "restart none none none"
+  },
+  x: 0,
+})
+
+gsap.fromTo(".texto-grande-der", {
+  x:100},{ 
+  scrollTrigger: {
+    trigger: ".texto-grande-der",
+    start: "top 100%",
+    //markers: true,
+    scrub: 1,
+    toggleActions: "restart pause reverse pause"
+  },
+  x: -300,
+})
