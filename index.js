@@ -341,11 +341,10 @@ gsap.from(".footer-container", {
     trigger: ".footer-container",
     start: "top 90%",
     end: "bottom 20%",
-    markers: true,
+    //markers: true,
     scrub: true,
 
     //toggleActions: "restart pause pause pause"
   },
   y: -200,
-  duration: 1
 })
