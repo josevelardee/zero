@@ -1,3 +1,73 @@
+const listaProyectos = document.querySelector('.lista-proyectos');
+var tipoProyecto = 'mecatronica';
+
+const requestURL = 'proyectos.json';
+const request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+  cargarElementosInicio();
+}
+
+function cargarElementosInicio(){
+  const jsonProyectos = request.response;
+  const dataProyectos = jsonProyectos['Proyectos']
+  proyectosFunc(dataProyectos);
+  const proElim = document.querySelectorAll ('.proyecto-item');
+  for(var j = 0 ;j<proElim.length;j++){
+   listaProyectos.removeChild(proElim[j]);
+  }
+  const filtProyectos = dataProyectos.filter(function(dataProyectos){
+    return dataProyectos.tipo == tipoProyecto;
+   });
+   proyectosFunc(filtProyectos);
+}
+
+function cargarElementos(){
+  const jsonProyectos = request.response;
+  const dataProyectos = jsonProyectos['Proyectos']
+  const filtProyectos = dataProyectos.filter(function(dataProyectos){
+    return dataProyectos.tipo == tipoProyecto;
+   });
+  proyectosFunc(filtProyectos);
+  hoverProyecto();
+  parallax() 
+}
+
+//Tipo de Proyecto Active Element y Filtro
+
+var proyectoTipo = document.getElementById("proyecto-tipo");
+var proyectoLinks = proyectoTipo.getElementsByClassName("proyecto-tipo-link");
+const proyectos = document.querySelectorAll(".proyecto-item")
+
+for (var i = 0; i < proyectoLinks.length; i++) {
+   proyectoLinks[i].addEventListener("click", function() {
+   var current = document.getElementsByClassName("proyecto-tipo-link_active");
+   
+   current[0].className = current[0].className.replace(" proyecto-tipo-link_active", "");
+   this.className += " proyecto-tipo-link_active";
+   
+   tipoProyecto = current[0].id;
+   
+   const proElim = document.querySelectorAll ('.proyecto-item');
+   for(var j = 0 ;j<proElim.length;j++){
+    listaProyectos.removeChild(proElim[j]);
+   }
+
+   const jsonProyectos = request.response;
+   const dataProyectos = jsonProyectos['Proyectos'];
+   const filtProyectos = dataProyectos.filter(function(dataProyectos){
+    return dataProyectos.tipo == tipoProyecto;
+   });
+    proyectosFunc(filtProyectos);
+
+    parallax();
+    hoverProyecto();
+   
+  });
+};
+
 //Texto Hero
 
 var app = document.getElementById('Hero-titulo');
@@ -90,3 +160,52 @@ document.getElementById("current_date").innerHTML = time;
 }
 setInterval(showTime, 1000);
 
+
+//Funcion para insertar proyectos
+
+function proyectosFunc(Array){
+    const dataProyectos = Array;
+  
+    for(var i = 0 ; i < dataProyectos.length; i++){
+      const divProyecto = document.createElement('div');    
+      const divTexto = document.createElement('div');
+      const divImg = document.createElement('a');
+      //const divTag = document.createElement('div');
+  
+      divTexto.setAttribute('class', 'proyecto-item-texto')
+      //divTag.setAttribute('class', 'proyecto-tag')
+  
+      //const subtitulo = document.createElement('h4');
+      const titulo = document.createElement('h4');
+      const descripcion = document.createElement('h5');
+      const imagen = document.createElement('img');
+  
+      //subtitulo.textContent = dataProyectos[i].subtitulo;
+      titulo.textContent = dataProyectos[i].titulo;
+      descripcion.textContent = dataProyectos[i].descripcion;
+    
+      imagen.setAttribute('src', dataProyectos[i].imagen);
+      imagen.setAttribute('alt', dataProyectos[i].titulo);
+      imagen.setAttribute('title', dataProyectos[i].titulo);
+      imagen.setAttribute('class', 'img-proyecto hovered-proyecto');
+      divImg.setAttribute('href', dataProyectos[i].url);
+      divImg.setAttribute('target', "_blank");
+      divImg.setAttribute('rel', "nofollow");
+          
+      //divTexto.appendChild(subtitulo);
+      divTexto.appendChild(titulo);
+      divTexto.appendChild(descripcion);
+      //divTexto.appendChild(divTag);
+      divImg.appendChild(imagen);
+  
+      //const tagProyecto= dataProyectos[i].tag.split(", ")
+      
+      divProyecto.setAttribute('class', 'proyecto-item inline-photo')
+      divImg.setAttribute('class', 'proyecto-item-imagen')
+      divProyecto.appendChild(divImg);
+      divProyecto.appendChild(divTexto);
+      
+
+      listaProyectos.appendChild(divProyecto);       
+  }
+}

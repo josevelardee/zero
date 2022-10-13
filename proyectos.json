@@ -1,0 +1,67 @@
+﻿{
+    "Proyectos": [
+        {
+            "subtitulo": "Cita - utec",
+            "titulo": "Monitoreo de ríos.",
+            "descripcion": "Desarrollo de hardware y software.",
+            "tag": "Product Manager, Python, Eagle",
+            "imagen": "img/Monitoreo de rios LSPIV.webp",
+            "tipo": "mecatronica",
+            "url": "https://www.dancingrivers.com/unidad-hidrodinamica"
+        },
+        {
+            "subtitulo": "Utec",
+            "titulo": "Simulador de sismo de 1 grado de libertad 🏬",
+            "descripcion": "Diseño de una mesa de simulación de sismo con 1 grado de libertad para los talleres de la carrera de Ingeniería Civil de la universidad UTEC.",
+            "tag": "Product Manager, Autodesk Inventor, Arduino IDE, Processing",
+            "imagen": "img/Simulador de sismo.webp",
+            "tipo": "mecatronica",
+            "url": "https://docs.google.com/presentation/d/1tNvnfxiMosgD44l5X3LBT4NXbSUuUI9Yvt2ogcTcnlo/edit#slide=id.g14425f23f33_1_102"
+        },
+        {
+            "subtitulo": "IGUA - Agua Pura Sostenible",
+            "titulo": "Desarrollo electrónico de fuentes IGUA 💧",
+            "descripcion": "Diseño de tarjetas electrónicas, selección de componentes y programación del sistema en la plataforma Raspberry Pi (Python) y Arduino.",
+            "tag": "Python, Raspberry Pi, Arduino IDE, Eagle",
+            "imagen": "img/IGUA.webp",
+            "tipo": "mecatronica",
+            "url": "https://www.igua.pe/"
+        },
+        {
+            "subtitulo": "Personal",
+            "titulo": "Portafolio personal 🤓",
+            "descripcion": "Diseño y desarrollo de mi portafolio personal de proyectos tecnológicos. Diseñado en Figma y programado en HTML, CSS y Javascript.",
+            "tag": "FIGMA, HTML5, CSS, Javascript",
+            "imagen": "img/Jose Velarde Web.webp",
+            "tipo": "website",
+            "url": ""
+        },
+        {
+            "subtitulo": "Cita - utec",
+            "titulo": "Interfaz de monitoreo de ríos 📊",
+            "descripcion": "Diseño de un Dashboard para la visualización de videos de ríos de montaña, así como sus variables de caudal, velocidad y profundidad. Diseñado en Adobe Illustrator.",
+            "tag": "Illustrator, Photoshop",
+            "imagen": "img/Dashboard medicion de rios.webp",
+            "tipo": "website",
+            "url": "https://docs.google.com/presentation/d/1tNvnfxiMosgD44l5X3LBT4NXbSUuUI9Yvt2ogcTcnlo/edit#slide=id.gfe694dc94b_0_28"
+        },
+        {
+            "subtitulo": "Reserva y juega",
+            "titulo": "App para reservar canchas Deportivas ⚽️",
+            "descripcion": "Diseño UI/UX de aplicación para facilitar y automatizar la reserva de una cancha deportiva, así como mostrar y promocionar sus instalaciones.",
+            "tag": "Figma, Photoshop, Illustrator, Sketch App, Marvelapp",
+            "imagen": "img/Aplicacion reserva canchas.webp",
+            "tipo": "app",
+            "url": "https://marvelapp.com/prototype/7703274/screen/81986220"
+        },
+        {
+            "subtitulo": "Wiñay",
+            "titulo": "Wiñay: Aplicación para agricultores familiares 👨‍🌾",
+            "descripcion": "Diseño UI/UX y testeo de aplicativo para agricultores familiares con pronóstico de clima, calculadora de insumos, consejos agropecuarios, sistema de mensajería, entre otros.",
+            "tag": "Figma, Photoshop, Illustrator, Sketch App, Marvelapp",
+            "imagen": "img/Aplicacion agricultores familiares.webp",
+            "tipo": "app",
+            "url": "https://marvelapp.com/prototype/c233e41/screen/80912831"
+        }
+    ]
+}

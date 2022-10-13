@@ -302,9 +302,85 @@ button{
 
 /* Proyectos */
 
-.proyecto{
-  margin-bottom: 250px; 
+.proyectos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
 }
+
+.proyectos h2{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.proyecto-tipo{
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.proyecto-tipo-item{
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.proyecto-tipo-item:last-child{
+  margin-right: 0px;
+}
+
+.proyecto-tipo-link{
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.proyecto-tipo-link_active{
+  background-color: #555555;
+  border-color: #555555 ;
+}
+.proyecto-tipo-link:hover{
+  background-color: #555555;
+  border-color: #555555 ;
+}
+
+
+.proyecto-item{
+  margin-bottom: 80px;
+}
+
+
+
+.proyecto-item-imagen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+
+.img-proyecto{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  filter: grayscale(0%);
+  transform: scale(1);
+  transition: all 0.5s;
+
+}
+
+.img-proyecto:hover{
+  /* filter: grayscale(100%); */
+  transform: scale(1.05); 
+}
+
+.proyecto-item-texto h4{
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
 
 
 /* Clientes */
