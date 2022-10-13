@@ -328,7 +328,7 @@ gsap.from(".pregunta-container", {
     end: "bottom 20%",
     //toggleActions: "restart pause pause pause"
   },
-  x: 10,
+  x: -10,
   opacity: 0,
   duration: 1
 })
