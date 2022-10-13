@@ -188,7 +188,7 @@ button{
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
 
 .hero-container{
@@ -271,7 +271,7 @@ button{
 }
 
 .carrousel{
-
+  overflow: hidden;
 }
 
 .lista-servicios{

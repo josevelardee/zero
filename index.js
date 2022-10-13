@@ -205,7 +205,7 @@ function proyectosFunc(Array){
   }
 }
 
-//Animation
+//Animacion HERO
 
 let tl = gsap.timeline()
 
@@ -218,33 +218,37 @@ tl.from(".nav-logo", {
 tl.from(".nav-toogle", { 
   y: -40,
   opacity: 0,
-  duration: 1
+  duration: 0.8
 }, "<")
 
 tl.from(".hero-container-texto", { 
   x: -100,
   opacity: 0,
-  duration: 1
+  duration: 0.8
 },"<0.4")
 
 tl.from(".hero-container-bottom", { 
   y: 40,
   opacity: 0,
-  duration: 1
-},"<0.4")
+  duration: 0.8
+},"<")
+
+//Animacion Descripcion
 
 gsap.from(".descripcion-container-texto", { 
   scrollTrigger: {
     trigger: ".descripcion-container-texto",
-    start: "top 80%",
+    start: "top 90%",
     end: "bottom 20%",
     //markers: true,
-    toggleActions: "restart pause pause pause"
+    //toggleActions: "restart pause pause pause"
   },
-  y: 50,
+  y: 40,
   opacity: 0,
   duration: 1.5
 })
+
+//Animacion Textos Grandes
 
 gsap.fromTo(".texto-grande-izq", { 
   x:-400},{ 
@@ -253,7 +257,6 @@ gsap.fromTo(".texto-grande-izq", {
     start: "top 100%",
     //markers: true,
     scrub: 1,
-    toggleActions: "restart none none none"
   },
   x: 0,
 })
@@ -265,7 +268,38 @@ gsap.fromTo(".texto-grande-der", {
     start: "top 100%",
     //markers: true,
     scrub: 1,
-    toggleActions: "restart pause reverse pause"
   },
   x: -300,
 })
+
+//Animacion Servicios
+
+gsap.from(".servicios-container h2", { 
+  scrollTrigger: {
+    trigger: ".servicios-container h2",
+    start: "top 80%",
+    end: "bottom 20%",
+
+  },
+  y: 20,
+  opacity: 0,
+  duration: 1
+})
+
+gsap.utils.toArray(".card-servicio").forEach((card, i) => {
+
+  gsap.from(card, { 
+    scrollTrigger: {
+      trigger: card,
+      start: "top 70%",
+      end: "bottom 20%",
+      //markers: true,
+      //toggleActions: "restart pause pause pause"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1
+  })
+
+});
+
