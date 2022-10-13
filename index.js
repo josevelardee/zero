@@ -209,12 +209,17 @@ function proyectosFunc(Array){
 
 let tl = gsap.timeline()
 
-
-tl.from(".nav", { 
+tl.from(".nav-logo", { 
   y: -40,
   opacity: 0,
   duration: 1
 })
+
+tl.from(".nav-toogle", { 
+  y: -40,
+  opacity: 0,
+  duration: 1
+}, "<")
 
 tl.from(".hero-container-texto", { 
   x: -100,
