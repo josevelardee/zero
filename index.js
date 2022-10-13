@@ -338,10 +338,10 @@ gsap.from(".pregunta-container", {
 
 gsap.from(".footer-container", { 
   scrollTrigger: {
-    trigger: ".footer-container",
-    start: "top 80%",
-    end: "bottom 20%",
-    //markers: true,
+    trigger: ".footer-container h4",
+    start: "top 100%",
+    end: "bottom 0%",
+    markers: true,
     scrub: 1,
 
     //toggleActions: "restart pause pause pause"
