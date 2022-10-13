@@ -291,7 +291,7 @@ gsap.utils.toArray(".card-servicio").forEach((card, i) => {
   gsap.from(card, { 
     scrollTrigger: {
       trigger: card,
-      start: "top 70%",
+      start: "top 80%",
       end: "bottom 20%",
       //markers: true,
       //toggleActions: "restart pause pause pause"
