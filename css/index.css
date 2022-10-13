@@ -7,10 +7,10 @@
 }
 
 body{
-    background-color:#111111;
     color: white;
     font-family: 'Inter', sans-serif;
     transition: all 300ms ease-in;
+    background-color:#111111;
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   }
 
@@ -101,6 +101,8 @@ button{
     height: 80px;
     width: 100%;
     position: absolute;
+    background-color:#111111;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
     top: 0px;
     left: 0;
     z-index: 1;
@@ -183,7 +185,9 @@ button{
 
 .hero{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
+    background-color:#111111;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -197,7 +201,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 160px);
 }
 
 .hero-container-texto{
@@ -236,6 +240,8 @@ button{
 
 .descripcion{
     width: 100%;
+    background-color:#111111;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -405,13 +411,11 @@ button{
   margin-bottom: 250px; 
 }
 
-
 /* Clientes */
 
 .clientes{
   margin-bottom: 250px; 
 }
-
 
 .clientes h2{
   margin-bottom: 50px; 
@@ -422,7 +426,6 @@ button{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .lista-clientes img{
@@ -430,14 +433,16 @@ button{
   height: 100%;
   vertical-align: middle;
   margin: 20px;
-
 }
 
 /* Pregunta */
 
 .pregunta{
-  margin-bottom: 250px; 
+  margin-bottom: 200px; 
+  background-color: #111111;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
 }
+
 .pregunta-container h3{
   text-align: right;
 }
@@ -445,14 +450,15 @@ button{
 /* Footer */
 
 footer{
-
+  background-color: #0b0b0b;
+  position: relative;
 }
 
 .footer-container{
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
-
+  justify-content:end;
 }
 
 .footer-texto{
@@ -507,3 +513,15 @@ white-space: nowrap;
   font-style: italic;
   font-size: 50px;
 }
+
+
+/* #containerfooter {
+  width: 100%;
+  height: 100%; 
+} */
+
+/* .panel {
+  position: absolute;
+  will-change: transform;
+} */
+

@@ -254,7 +254,7 @@ gsap.fromTo(".texto-grande-izq", {
   x:-400},{ 
   scrollTrigger: {
     trigger: ".texto-grande-izq",
-    start: "top 100%",
+    start: "top 110%",
     //markers: true,
     scrub: 1,
   },
@@ -265,7 +265,7 @@ gsap.fromTo(".texto-grande-der", {
   x:100},{ 
   scrollTrigger: {
     trigger: ".texto-grande-der",
-    start: "top 100%",
+    start: "top 110%",
     //markers: true,
     scrub: 1,
   },
@@ -303,3 +303,49 @@ gsap.utils.toArray(".card-servicio").forEach((card, i) => {
 
 });
 
+
+//Animacion Clientes
+
+gsap.from(".clientes-container", { 
+  scrollTrigger: {
+    trigger: ".clientes-container",
+    start: "top 90%",
+    end: "bottom 20%",
+    //markers: true,
+    //toggleActions: "restart pause pause pause"
+  },
+  y: 40,
+  opacity: 0,
+  duration: 1.5
+})
+
+//Animacion Pregunta
+
+gsap.from(".pregunta-container", { 
+  scrollTrigger: {
+    trigger: ".pregunta-container",
+    start: "top 90%",
+    end: "bottom 20%",
+    //toggleActions: "restart pause pause pause"
+  },
+  x: 10,
+  opacity: 0,
+  duration: 1
+})
+
+
+//Animacion Footer
+
+gsap.from(".footer-container", { 
+  scrollTrigger: {
+    trigger: ".footer-container",
+    start: "top 90%",
+    end: "bottom 20%",
+    markers: true,
+    scrub: true,
+
+    //toggleActions: "restart pause pause pause"
+  },
+  y: -200,
+  duration: 1
+})
