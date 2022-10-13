@@ -250,27 +250,34 @@ gsap.from(".descripcion-container-texto", {
 
 //Animacion Textos Grandes
 
-gsap.fromTo(".texto-grande-izq", { 
-  x:-400},{ 
-  scrollTrigger: {
-    trigger: ".texto-grande-izq",
-    start: "top 110%",
-    //markers: true,
-    scrub: 1,
-  },
-  x: 0,
-})
+gsap.utils.toArray(".texto-grande-izq").forEach((textoizq, i) => {
 
-gsap.fromTo(".texto-grande-der", {
-  x:100},{ 
-  scrollTrigger: {
-    trigger: ".texto-grande-der",
-    start: "top 110%",
-    //markers: true,
-    scrub: 1,
-  },
-  x: -300,
-})
+  gsap.fromTo(textoizq, { 
+    x:-400},{ 
+    scrollTrigger: {
+      trigger: textoizq,
+      start: "top 110%",
+      scrub: 1,
+    },
+    x: 0,
+  })
+
+});
+
+gsap.utils.toArray(".texto-grande-der").forEach((textoder, i) => {
+
+  gsap.fromTo(textoder, { 
+    x:100},{ 
+    scrollTrigger: {
+      trigger: textoder,
+      start: "top 110%",
+      scrub: 1,
+    },
+    x: -300,
+  })
+
+});
+
 
 //Animacion Servicios
 
@@ -341,7 +348,7 @@ gsap.from(".footer-container", {
     trigger: ".footer-container h4",
     start: "top 100%",
     end: "bottom 0%",
-    markers: true,
+    //markers: true,
     scrub: 1,
 
     //toggleActions: "restart pause pause pause"
