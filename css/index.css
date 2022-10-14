@@ -19,6 +19,10 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   }
 
+.overflow{
+  overflow-y:hidden;
+}
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -165,7 +169,6 @@ button{
     align-items: center;
     padding: 150px 20px ;
     height: 100vh;
-    overflow-y: auto;
     left: 0%;
     transition: left 0.3s;
   }
