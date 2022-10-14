@@ -383,35 +383,6 @@ gsap.from(".proyectos-container", {
   duration: 1
 })
 
-// gsap.from(".proyecto-tipo", { 
-//   scrollTrigger: {
-//     trigger: ".proyecto-tipo",
-//     start: "top 100%",
-//     end: "bottom 20%",
-//     //markers:true
-
-
-//   },
-//   y: 40,
-//   opacity: 0,
-//   duration: 1
-// })
-
-// gsap.utils.toArray(".proyecto-item").forEach((proyecto, i) => {
-//   gsap.from(proyecto, { 
-//     scrollTrigger: {
-//       trigger: proyecto,
-//       start: "top 80%",
-//       end: "bottom 20%",
-//       markers: true,
-//       //toggleActions: "restart pause pause pause"
-//     },
-//     y: 50,
-//     opacity: 0,
-//     duration: 1
-//   })
-// });
-
 
 //Animacion Clientes
 
