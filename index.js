@@ -426,7 +426,7 @@ gsap.from(".footer-container", {
 
     //toggleActions: "restart pause pause pause"
   },
-  y: 30,
+  y: -40,
   opacity: 0,
-  duration: 2
+  duration: 1.5
 })

@@ -11,6 +11,10 @@ main{
   padding: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     color: white;
     font-family: 'Inter', sans-serif;
@@ -197,7 +201,7 @@ button{
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90PX;
+    margin-bottom: 80PX;
   }
 
   .nav-toogle{
@@ -251,7 +255,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 160px);
 }
 
 .hero-container-texto{
