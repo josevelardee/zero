@@ -216,7 +216,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 180px);
 }
 
 .hero-container-texto{
