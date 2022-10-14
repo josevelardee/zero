@@ -9,7 +9,6 @@
 body{
     color: white;
     font-family: 'Inter', sans-serif;
-    transition: all 300ms ease-in;
     overflow-x: hidden;
     background-color:#111111;
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
