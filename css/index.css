@@ -504,25 +504,18 @@ white-space: nowrap;
 
 }
 .texto-grande-izq{
-  opacity: 0.1;
+  opacity: 0.2;
   font-style: italic;
-  font-size: 50px;
+  font-size: 55px;
+  font-weight: 700;
 }
 
 .texto-grande-der{
-  opacity: 0.1;
+  opacity: 0.2;
   font-style: italic;
-  font-size: 50px;
+  font-size: 55px;
+  font-weight: 700;
 }
 
 
-/* #containerfooter {
-  width: 100%;
-  height: 100%; 
-} */
-
-/* .panel {
-  position: absolute;
-  will-change: transform;
-} */
 

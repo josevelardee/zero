@@ -288,7 +288,7 @@ gsap.from(".servicios-container h2", {
     end: "bottom 20%",
 
   },
-  y: 20,
+  y: 40,
   opacity: 0,
   duration: 1
 })
@@ -309,6 +309,37 @@ gsap.utils.toArray(".card-servicio").forEach((card, i) => {
   })
 
 });
+
+//Animacion Proyectos
+
+gsap.from(".proyectos-container h2", { 
+  scrollTrigger: {
+    trigger: ".proyectos-container h2",
+    start: "top 80%",
+    end: "bottom 20%",
+
+  },
+  y: 40,
+  opacity: 0,
+  duration: 1
+})
+
+// gsap.utils.toArray(".card-servicio").forEach((card, i) => {
+
+//   gsap.from(card, { 
+//     scrollTrigger: {
+//       trigger: card,
+//       start: "top 80%",
+//       end: "bottom 20%",
+//       //markers: true,
+//       //toggleActions: "restart pause pause pause"
+//     },
+//     y: 50,
+//     opacity: 0,
+//     duration: 1
+//   })
+
+// });
 
 
 //Animacion Clientes
@@ -353,5 +384,5 @@ gsap.from(".footer-container", {
 
     //toggleActions: "restart pause pause pause"
   },
-  y: -100,
+  y: -150,
 })
