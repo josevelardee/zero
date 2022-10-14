@@ -121,14 +121,29 @@ button{
 
 .nav-logo{
     display: flex;
+    flex-direction: row;
     padding: 0 20px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: Roboto Slab;
+    font-weight: 600;
   }
   
   .nav-logo a{
+    display: flex;
+    flex-direction: row;
     width: max-content;
   }
+
+  .asim{
+    position: relative;
+    color: #eeeeee;
+  }
   
+  .etric{
+    position: relative;
+    color: #eeeeee;
+  }
+
   .img-logo{
     padding: 0px;
     height: 20px;
@@ -517,7 +532,7 @@ white-space: nowrap;
 
 }
 .texto-grande-izq{
-  opacity: 0.2;
+  opacity: 0.2; 
   font-style: italic;
   font-size: 55px;
   font-weight: 700;
