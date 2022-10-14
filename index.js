@@ -278,15 +278,15 @@ tl.from(".hero-container-bottom", {
   duration: 0.8
 },"<")
 
-tl.to(".asim", { 
-  y: -5,
-  duration: 0.3
-})
+// tl.to(".asim", { 
+//   y: -5,
+//   duration: 0.3
+// })
 
-tl.to(".etric", { 
-  y: 5,
-  duration: 0.3
-},"<")
+// tl.to(".etric", { 
+//   y: 5,
+//   duration: 0.3
+// },"<")
 
 //Animacion Descripcion
 
