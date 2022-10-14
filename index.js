@@ -369,12 +369,12 @@ gsap.utils.toArray(".card-servicio").forEach((card, i) => {
 
 //Animacion Proyectos
 
-gsap.from(".proyectos-container h2", { 
+gsap.from(".proyectos-container", { 
   scrollTrigger: {
-    trigger: ".proyectos-container h2",
-    start: "top 80%",
+    trigger: ".proyectos-container",
+    start: "top 90%",
     end: "bottom 20%",
-    //markers:true
+    markers:true
 
 
   },
@@ -383,19 +383,19 @@ gsap.from(".proyectos-container h2", {
   duration: 1
 })
 
-gsap.from(".proyecto-tipo", { 
-  scrollTrigger: {
-    trigger: ".proyecto-tipo",
-    start: "top 100%",
-    end: "bottom 20%",
-    //markers:true
+// gsap.from(".proyecto-tipo", { 
+//   scrollTrigger: {
+//     trigger: ".proyecto-tipo",
+//     start: "top 100%",
+//     end: "bottom 20%",
+//     //markers:true
 
 
-  },
-  y: 40,
-  opacity: 0,
-  duration: 1
-})
+//   },
+//   y: 40,
+//   opacity: 0,
+//   duration: 1
+// })
 
 // gsap.utils.toArray(".proyecto-item").forEach((proyecto, i) => {
 //   gsap.from(proyecto, { 
@@ -455,7 +455,7 @@ gsap.from(".footer-container", {
 
     //toggleActions: "restart pause pause pause"
   },
-  y: 40,
+  y: 30,
   opacity: 0,
-  duration: 1.5
+  duration: 2
 })
