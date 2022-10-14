@@ -312,8 +312,8 @@ gsap.utils.toArray(".texto-grande-izq").forEach((textoizq, i) => {
     x:-400},{ 
     scrollTrigger: {
       trigger: textoizq,
-      start: "top 110%",
-      scrub: 1,
+      start: "top 120%",
+      scrub: true,
     },
     x: 0,
   })
@@ -326,8 +326,8 @@ gsap.utils.toArray(".texto-grande-der").forEach((textoder, i) => {
     x:100},{ 
     scrollTrigger: {
       trigger: textoder,
-      start: "top 110%",
-      scrub: 1,
+      start: "top 120%",
+      scrub: true,
       //markers:true
     },
     x: -300,
@@ -448,12 +448,14 @@ gsap.from(".pregunta-container", {
 gsap.from(".footer-container", { 
   scrollTrigger: {
     trigger: ".footer-container h4",
-    start: "top 100%",
-    end: "bottom 0%",
+    start: "top 80%",
+    end: "bottom 20%",
     //markers: true,
-    scrub: true,
+    //scrub: true,
 
     //toggleActions: "restart pause pause pause"
   },
-  y: -150,
+  y: 40,
+  opacity: 0,
+  duration: 1.5
 })
