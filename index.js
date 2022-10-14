@@ -118,7 +118,7 @@ function proyectosFunc(Array){
     gsap.from(proyecto, { 
       scrollTrigger: {
         trigger: proyecto,
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom 20%",
         //markers: true,
         //toggleActions: "restart pause pause pause"
@@ -313,7 +313,7 @@ gsap.utils.toArray(".texto-grande-izq").forEach((textoizq, i) => {
     scrollTrigger: {
       trigger: textoizq,
       start: "top 120%",
-      scrub: true,
+      scrub: 1,
     },
     x: 0,
   })
@@ -327,7 +327,7 @@ gsap.utils.toArray(".texto-grande-der").forEach((textoder, i) => {
     scrollTrigger: {
       trigger: textoder,
       start: "top 120%",
-      scrub: true,
+      scrub: 1,
       //markers:true
     },
     x: -300,
@@ -341,7 +341,7 @@ gsap.utils.toArray(".texto-grande-der").forEach((textoder, i) => {
 gsap.from(".servicios-container h2", { 
   scrollTrigger: {
     trigger: ".servicios-container h2",
-    start: "top 80%",
+    start: "top 90%",
     end: "bottom 20%",
 
   },
@@ -355,7 +355,7 @@ gsap.utils.toArray(".card-servicio").forEach((card, i) => {
   gsap.from(card, { 
     scrollTrigger: {
       trigger: card,
-      start: "top 80%",
+      start: "top 90%",
       end: "bottom 20%",
       //markers: true,
       //toggleActions: "restart pause pause pause"
@@ -374,7 +374,7 @@ gsap.from(".proyectos-container", {
     trigger: ".proyectos-container",
     start: "top 90%",
     end: "bottom 20%",
-    markers:true
+    //markers:true
 
 
   },
@@ -418,7 +418,7 @@ gsap.from(".proyectos-container", {
 gsap.from(".clientes-container", { 
   scrollTrigger: {
     trigger: ".clientes-container",
-    start: "top 80%",
+    start: "top 90%",
     end: "bottom 20%",
     //markers: true,
     //toggleActions: "restart pause pause pause"
@@ -433,7 +433,7 @@ gsap.from(".clientes-container", {
 gsap.from(".pregunta-container", { 
   scrollTrigger: {
     trigger: ".pregunta-container",
-    start: "top 80%",
+    start: "top 90%",
     end: "bottom 20%",
     //toggleActions: "restart pause pause pause"
   },
@@ -448,7 +448,7 @@ gsap.from(".pregunta-container", {
 gsap.from(".footer-container", { 
   scrollTrigger: {
     trigger: ".footer-container h4",
-    start: "top 80%",
+    start: "top 90%",
     end: "bottom 20%",
     //markers: true,
     //scrub: true,
