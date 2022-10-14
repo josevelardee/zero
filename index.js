@@ -267,7 +267,7 @@ tl.from(".nav-toogle", {
 }, "<")
 
 tl.from(".hero-container-texto", { 
-  x: -100,
+  x: 20,
   opacity: 0,
   duration: 0.8
 },"<0.4")
