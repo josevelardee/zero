@@ -214,7 +214,7 @@ navTogle.addEventListener("click",() => {
 for (var i = 0; i<menuItem.length ; i++){
   menuItem[i].addEventListener("click",() => {
   navMenu.classList.toggle("nav-menu_visible");
-
+  document.body.classList.remove("overflow");
 
 })
 }
