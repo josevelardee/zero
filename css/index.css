@@ -159,18 +159,31 @@ button{
   }
   
   .nav-menu{
-    flex-direction: column;
-    margin-right: 20px;
+
     background-color: #111111;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    margin-right: 20px;
+    padding: 20px;
+
     position: fixed;
     top:0px;
     left:0;
+    
     width: 100%;
-    align-items: center;
-    padding: 150px 20px ;
     height: 100vh;
+
     left: 0%;
+
     transition: left 0.3s;
+  }
+
+  .nav-menu ul{
+    margin-top: 100px;
+
   }
   
   .nav-menu-item{
@@ -179,6 +192,13 @@ button{
     text-align: center;
   }
 
+  .menu-redes{
+    color: #888888;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 
   .nav-toogle{
     z-index: 10;
@@ -187,6 +207,10 @@ button{
 
   .nav-toogle i{
     font-size: 30px;
+  }
+
+  .nav-toogle-show{
+    display: none;
   }
 
   .nav-menu_visible{

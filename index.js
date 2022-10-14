@@ -14,14 +14,6 @@ function cargarElementosInicio(){
   const jsonProyectos = request.response;
   const dataProyectos = jsonProyectos['Proyectos']
   proyectosFunc(dataProyectos);
-  // const proElim = document.querySelectorAll ('.proyecto-item');
-  // for(var j = 0 ;j<proElim.length;j++){
-  //  listaProyectos.removeChild(proElim[j]);
-  // }
-  // const filtProyectos = dataProyectos.filter(function(dataProyectos){
-  //   return dataProyectos.tipo == tipoProyecto;
-  //  });
-  //  proyectosFunc(filtProyectos);
 }
 
 function cargarElementos(){
@@ -197,10 +189,18 @@ typewriter
 const navTogle = document.querySelector(".nav-toogle");
 const navMenu = document.querySelector(".nav-menu");
 const menuItem = document.querySelectorAll(".nav-menu-link");
+const navIconH = document.querySelector(".bi-list");
+const navIconX = document.querySelector(".bi-x");
+
+
 
 navTogle.addEventListener("click",() => {
     navMenu.classList.toggle("nav-menu_visible");
     document.body.classList.toggle("overflow");
+    navIconH.classList.toggle("nav-toogle-show");
+    navIconX.classList.toggle("nav-toogle-show");
+
+
 
 
     if(navMenu.classList.contains("nav-menu_visible")){
