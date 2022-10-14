@@ -130,6 +130,7 @@ button{
     font-size: 20px;
     font-family: Roboto Slab;
     font-weight: 600;
+    z-index: 10;
   }
   
   .nav-logo a{
@@ -156,14 +157,14 @@ button{
   .nav-menu{
     flex-direction: column;
     margin-right: 20px;
-    background-color: #0b0b0b;
+    background-color: #111111;
     position: fixed;
-    top:80px;
+    top:0px;
     left:0;
     width: 100%;
     align-items: center;
-    padding: 20px;
-    height: calc(100% - 40px);
+    padding: 150px 20px ;
+    height: 100vh;
     overflow-y: auto;
     left: 0%;
     transition: left 0.3s;
@@ -177,6 +178,7 @@ button{
 
 
   .nav-toogle{
+    z-index: 10;
     display: block;
   }
 
@@ -222,7 +224,7 @@ button{
     align-items: left;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 170px);
 }
 
 .hero-container-texto{

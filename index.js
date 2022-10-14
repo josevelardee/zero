@@ -64,6 +64,7 @@ for (var i = 0; i < proyectoLinks.length; i++) {
    } else{
     proyectosFunc(filtProyectos);
    }
+   ScrollTrigger.refresh()
 
   });
 };
