@@ -321,6 +321,7 @@ button{
   display: flex;
   align-items: center;
   flex-direction: column; 
+  margin-bottom: 200px;
 }
 
 .proyectos h2{
@@ -404,7 +405,18 @@ button{
   font-weight: 400;
 }
 
+.mas-proyectos{
+  display: flex;
+  justify-content: center;
+}
 
+.mas-proyectos i{
+  margin-left: 10px;
+}
+
+.proyecto-display{
+  display: none;
+}
 
 /* Clientes */
 
@@ -499,6 +511,7 @@ footer{
 /* TEXTO GRANDE */
 .texto-grande{
 margin-bottom: 150px;
+position: relative;
 overflow: hidden;
 white-space: nowrap;
 

@@ -14,14 +14,14 @@ function cargarElementosInicio(){
   const jsonProyectos = request.response;
   const dataProyectos = jsonProyectos['Proyectos']
   proyectosFunc(dataProyectos);
-  const proElim = document.querySelectorAll ('.proyecto-item');
-  for(var j = 0 ;j<proElim.length;j++){
-   listaProyectos.removeChild(proElim[j]);
-  }
-  const filtProyectos = dataProyectos.filter(function(dataProyectos){
-    return dataProyectos.tipo == tipoProyecto;
-   });
-   proyectosFunc(filtProyectos);
+  // const proElim = document.querySelectorAll ('.proyecto-item');
+  // for(var j = 0 ;j<proElim.length;j++){
+  //  listaProyectos.removeChild(proElim[j]);
+  // }
+  // const filtProyectos = dataProyectos.filter(function(dataProyectos){
+  //   return dataProyectos.tipo == tipoProyecto;
+  //  });
+  //  proyectosFunc(filtProyectos);
 }
 
 function cargarElementos(){
@@ -58,10 +58,105 @@ for (var i = 0; i < proyectoLinks.length; i++) {
    const filtProyectos = dataProyectos.filter(function(dataProyectos){
     return dataProyectos.tipo == tipoProyecto;
    });
+
+   if (tipoProyecto=="todos"){
+    proyectosFunc(dataProyectos);
+   } else{
     proyectosFunc(filtProyectos);
+   }
 
   });
 };
+
+//Funcion para insertar proyectos
+
+function proyectosFunc(Array){
+  const dataProyectos = Array;
+
+  for(var i = 0 ; i < dataProyectos.length; i++){
+
+    const divProyecto = document.createElement('div');    
+    const divTexto = document.createElement('div');
+    const divImg = document.createElement('a');
+
+    divTexto.setAttribute('class', 'proyecto-item-texto')
+
+    const titulo = document.createElement('h4');
+    const descripcion = document.createElement('h5');
+    const imagen = document.createElement('img');
+
+    titulo.textContent = dataProyectos[i].titulo;
+    descripcion.textContent = dataProyectos[i].descripcion;
+  
+    imagen.setAttribute('src', dataProyectos[i].imagen);
+    imagen.setAttribute('alt', dataProyectos[i].titulo);
+    imagen.setAttribute('title', dataProyectos[i].titulo);
+    imagen.setAttribute('class', 'img-proyecto hovered-proyecto');
+    divImg.setAttribute('href', dataProyectos[i].url);
+    divImg.setAttribute('target', "_blank");
+    divImg.setAttribute('rel', "nofollow");
+        
+    //divTexto.appendChild(subtitulo);
+    divTexto.appendChild(titulo);
+    divTexto.appendChild(descripcion);
+    //divTexto.appendChild(divTag);
+    divImg.appendChild(imagen);
+
+    //const tagProyecto= dataProyectos[i].tag.split(", ")
+    
+    divProyecto.setAttribute('class', 'proyecto-item')
+    if (i >= 4){
+      divProyecto.setAttribute('class', 'proyecto-item proyecto-display')
+    }
+    divImg.setAttribute('class', 'proyecto-item-imagen')
+    divProyecto.appendChild(divImg);
+    divProyecto.appendChild(divTexto);
+    listaProyectos.appendChild(divProyecto);  
+  }
+  
+  if (dataProyectos.length >= 4){
+    vermas.classList.remove("proyecto-display")
+  }
+  else{
+    vermas.classList.add("proyecto-display")
+  }
+
+  gsap.utils.toArray(".proyecto-item").forEach((proyecto, i) => {
+    gsap.from(proyecto, { 
+      scrollTrigger: {
+        trigger: proyecto,
+        start: "top 80%",
+        end: "bottom 20%",
+        //markers: true,
+        //toggleActions: "restart pause pause pause"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1
+    })
+  });
+}
+
+
+// Boton Mas proyectos
+
+var vermas = document.querySelector(".boton-mas-proyectos");
+
+vermas.addEventListener("click",() => {
+  var proyectos  = document.querySelectorAll(".proyecto-display");
+  for (var i=0; i<proyectos.length ;i++){
+    if (proyectos.length <= 3){
+      vermas.classList.add("proyecto-display")
+    }
+    if (i<3){
+      proyectos[i].classList.remove("proyecto-display");
+    }
+  }
+  ScrollTrigger.refresh()
+
+  
+});
+
 
 //Texto Hero
 
@@ -123,19 +218,17 @@ for (var i = 0; i<menuItem.length ; i++){
 })
 }
 
-//Scroll
+// //Scroll
 
+// const header = document.querySelector(".header")
 
+// const hero_container = document.querySelector(".hero");
+// const proyecto_container = document.querySelector(".descripcion");
 
-const header = document.querySelector(".header")
+// const menutextColor = document.querySelectorAll(".color_letra");
 
-const hero_container = document.querySelector(".hero");
-const proyecto_container = document.querySelector(".descripcion");
-
-const menutextColor = document.querySelectorAll(".color_letra");
-
-var heroPos = []
-var proyectoPos = []
+// var heroPos = []
+// var proyectoPos = []
 
   
 //HORA
@@ -156,54 +249,6 @@ document.getElementById("current_date").innerHTML = time;
 setInterval(showTime, 1000);
 
 
-//Funcion para insertar proyectos
-
-function proyectosFunc(Array){
-    const dataProyectos = Array;
-  
-    for(var i = 0 ; i < dataProyectos.length; i++){
-      const divProyecto = document.createElement('div');    
-      const divTexto = document.createElement('div');
-      const divImg = document.createElement('a');
-      //const divTag = document.createElement('div');
-  
-      divTexto.setAttribute('class', 'proyecto-item-texto')
-      //divTag.setAttribute('class', 'proyecto-tag')
-  
-      //const subtitulo = document.createElement('h4');
-      const titulo = document.createElement('h4');
-      const descripcion = document.createElement('h5');
-      const imagen = document.createElement('img');
-  
-      //subtitulo.textContent = dataProyectos[i].subtitulo;
-      titulo.textContent = dataProyectos[i].titulo;
-      descripcion.textContent = dataProyectos[i].descripcion;
-    
-      imagen.setAttribute('src', dataProyectos[i].imagen);
-      imagen.setAttribute('alt', dataProyectos[i].titulo);
-      imagen.setAttribute('title', dataProyectos[i].titulo);
-      imagen.setAttribute('class', 'img-proyecto hovered-proyecto');
-      divImg.setAttribute('href', dataProyectos[i].url);
-      divImg.setAttribute('target', "_blank");
-      divImg.setAttribute('rel', "nofollow");
-          
-      //divTexto.appendChild(subtitulo);
-      divTexto.appendChild(titulo);
-      divTexto.appendChild(descripcion);
-      //divTexto.appendChild(divTag);
-      divImg.appendChild(imagen);
-  
-      //const tagProyecto= dataProyectos[i].tag.split(", ")
-      
-      divProyecto.setAttribute('class', 'proyecto-item inline-photo')
-      divImg.setAttribute('class', 'proyecto-item-imagen')
-      divProyecto.appendChild(divImg);
-      divProyecto.appendChild(divTexto);
-      
-
-      listaProyectos.appendChild(divProyecto);       
-  }
-}
 
 //Animacion HERO
 
@@ -272,6 +317,7 @@ gsap.utils.toArray(".texto-grande-der").forEach((textoder, i) => {
       trigger: textoder,
       start: "top 110%",
       scrub: 1,
+      //markers:true
     },
     x: -300,
   })
@@ -317,6 +363,8 @@ gsap.from(".proyectos-container h2", {
     trigger: ".proyectos-container h2",
     start: "top 80%",
     end: "bottom 20%",
+    //markers:true
+
 
   },
   y: 40,
@@ -324,21 +372,33 @@ gsap.from(".proyectos-container h2", {
   duration: 1
 })
 
-// gsap.utils.toArray(".card-servicio").forEach((card, i) => {
+gsap.from(".proyecto-tipo", { 
+  scrollTrigger: {
+    trigger: ".proyecto-tipo",
+    start: "top 100%",
+    end: "bottom 20%",
+    //markers:true
 
-//   gsap.from(card, { 
+
+  },
+  y: 40,
+  opacity: 0,
+  duration: 1
+})
+
+// gsap.utils.toArray(".proyecto-item").forEach((proyecto, i) => {
+//   gsap.from(proyecto, { 
 //     scrollTrigger: {
-//       trigger: card,
+//       trigger: proyecto,
 //       start: "top 80%",
 //       end: "bottom 20%",
-//       //markers: true,
+//       markers: true,
 //       //toggleActions: "restart pause pause pause"
 //     },
 //     y: 50,
 //     opacity: 0,
 //     duration: 1
 //   })
-
 // });
 
 

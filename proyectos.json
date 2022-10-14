@@ -62,6 +62,33 @@
             "imagen": "img/Aplicacion agricultores familiares.webp",
             "tipo": "app",
             "url": "https://marvelapp.com/prototype/c233e41/screen/80912831"
+        },
+        {
+            "subtitulo": "Reserva y juega",
+            "titulo": "Reserva y juega",
+            "descripcion": "Diseño UI/UX y prototipado ágil.",
+            "tag": "Figma, Photoshop, Illustrator, Sketch App, Marvelapp",
+            "imagen": "img/Aplicacion reserva canchas.webp",
+            "tipo": "app",
+            "url": "https://marvelapp.com/prototype/7703274/screen/81986220"
+        },
+        {
+            "subtitulo": "Wiñay",
+            "titulo": "Wiñay App",
+            "descripcion": "Diseño UI/UI y prototipado ágil.",
+            "tag": "Figma, Photoshop, Illustrator, Sketch App, Marvelapp",
+            "imagen": "img/Aplicacion agricultores familiares.webp",
+            "tipo": "app",
+            "url": "https://marvelapp.com/prototype/c233e41/screen/80912831"
+        },
+        {
+            "subtitulo": "Wiñay",
+            "titulo": "Wiñay App",
+            "descripcion": "Diseño UI/UI y prototipado ágil.",
+            "tag": "Figma, Photoshop, Illustrator, Sketch App, Marvelapp",
+            "imagen": "img/Aplicacion agricultores familiares.webp",
+            "tipo": "app",
+            "url": "https://marvelapp.com/prototype/c233e41/screen/80912831"
         }
     ]
 }
