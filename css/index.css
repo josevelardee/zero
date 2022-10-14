@@ -317,7 +317,7 @@ button{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 
 }
 
@@ -470,13 +470,13 @@ button{
 /* Clientes */
 
 .equipo{
-  margin-bottom: 250px; 
+  margin-bottom: 200px; 
 }
 
 /* Clientes */
 
 .clientes{
-  margin-bottom: 250px; 
+  margin-bottom: 200px; 
 }
 
 .clientes h2{
