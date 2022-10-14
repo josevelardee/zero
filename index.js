@@ -418,7 +418,7 @@ gsap.from(".proyecto-tipo", {
 gsap.from(".clientes-container", { 
   scrollTrigger: {
     trigger: ".clientes-container",
-    start: "top 90%",
+    start: "top 80%",
     end: "bottom 20%",
     //markers: true,
     //toggleActions: "restart pause pause pause"
@@ -433,7 +433,7 @@ gsap.from(".clientes-container", {
 gsap.from(".pregunta-container", { 
   scrollTrigger: {
     trigger: ".pregunta-container",
-    start: "top 90%",
+    start: "top 80%",
     end: "bottom 20%",
     //toggleActions: "restart pause pause pause"
   },
@@ -451,7 +451,7 @@ gsap.from(".footer-container", {
     start: "top 100%",
     end: "bottom 0%",
     //markers: true,
-    scrub: 1,
+    scrub: true,
 
     //toggleActions: "restart pause pause pause"
   },
